@@ -19,7 +19,7 @@
         crossorigin="anonymous"></script>
     <!---->
 
-    <title>Personas</title>
+    <title>Iterative Design</title>
 </head>
 
 <!--Copied from bootstrap-->
@@ -44,10 +44,13 @@
                     Projects
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Personas</a>
-                    <a class="dropdown-item" href="#">Responsive Redesign</a>
-                    <a class="dropdown-item" href="#">Iterative Design</a>
-                    <a class="dropdown-item" href="#">Development</a>
+                    <a class="dropdown-item" href="https://stonedstallion420.github.io/personas/">Personas</a>
+                    <a class="dropdown-item" href="https://stonedstallion420.github.io/responsive-redesign/">Responsive
+                        Redesign</a>
+                    <a class="dropdown-item" href="#">Iterative
+                        Design</a>
+                    <a class="dropdown-item"
+                        href="https://stonedstallion420.github.io/development-page/">Development</a>
                 </div>
             </li>
         </ul>
@@ -56,118 +59,225 @@
 <!---->
 
 <main>
-    <h1>Personas & Storyboarding</h1>
+    <h1>Iterative Design</h1>
     <section>
         <h2>Overview</h2>
-        <p>I observed people interacting with a Nespresso coffee machine, interviewed them about their experiences,
-            created
-            two personas based on my observations and their responses, then illustrated a storyboard for one of my
-            personas.
+        <p>This project was for CSCI1300: User Interface and User Interaction focusing on going through the full process
+            of mocking up a solution to a startup's concept. We iteratively designed an interactive interface for an
+            emerging startup: Finnt. There are four parts to the iterative design process flow: (1) sketching ideas of
+            the interface, (2) creating an interactive, high-fidelity prototype, (3) conducting user testing on a final,
+            revised prototype, and (4) contacting the start-up.
         </p>
     </section>
     <section>
-        <h2>Part 1: Preparation</h2>
-        <p>I first performed a contextual inquiry: I observed a Nespresso coffee machine sitting in the lounge of an
-            apartment, created interview questions, then asked these questions to people while they were interacting
-            with the Nespresso. To better understand the Nespresso, I drew a sketch of it and labeled its interactive
-            components.</p>
-        <img class="sect-img" src="./assets/sketch.jpg">
-        <p>Nespresso makes making coffee easy. Other coffee machines require users to purchase coffee beans and filter
-            paper, measure out how many beans they want to use, grind them, then wait several minutes for their coffee
-            to brew. With Nespresso, a user simply taps under the tab to open the machine, inserts a capsule that
-            contains ground beans, taps on top of the tab to close the machine, and presses a button for their coffee.
-            Note that the user will have to press the button twice. The first press will preheat the Nespresso, which is
-            indicated by a flashing green light. Once the light stops flashing, the user can press the button a second
-            time and the Nespresso will dispense coffee.</p>
-    </section>
-    <section>
-        <h2>Part 2: Recording Observations</h2>
-        <p>I observed 3 people using the Nespresso. Here are key observations I learned:</p>
+        <h2>Part 1: Sketching & Wireframing</h2>
+        <p class="h3">Pre-Design Thinking</p>
+        <p>Finnt is a mobile banking app for families. By allowing family members to create sub-accounts under a main
+            account, Finnt makes financial management easy. Finnt is designed for families who want to track the
+            spending of their kids, send money to relatives overseas, and save together.<br><br>Families would be
+            impacted
+            by this interface because currently many families share the problem of tracking the spending of their family
+            members, paying hefty fees to send money internationally, and finding ways to save.</p>
+        <p class="h3">Sketching</p>
+        <p>We brainstormed 4 different possible designs for Finnt’s app. Each design includes 3 different screens that
+            show the key functionalities of the app.</p>
+        <p class="sketch">Sketch 1</p>
+        <img class="sect-img" src="./assets/sketch1.png">
+        <p class="sketch">Sketch 2</p>
+        <img class="sect-img" src="./assets/sketch2.png">
+        <p class="sketch">Sketch 3</p>
+        <img class="sect-img" src="./assets/sketch3.png">
+        <p class="sketch">Sketch 4</p>
+        <img class="sect-img" src="./assets/sketch4.png">
+        <p class="h3">Combining Ideas into a Wireframe</p>
+        <p>After brainstorming, our group discussed whether the sketches we created demonstrate a diverse set of
+            creative solutions to Finnt’s goals. After this conversation, we created a set of wireframes in Figma.</p>
+        <img class="sect-img" src="./assets/lofi.jpg">
+        <p class="design-choices">Some of the design choices that led to this wireframe were:</p>
         <ul>
-            <li>All users first interacted with the tab to open the Nespresso. Only some of the users correctly tapped
-                the tab; others used the tab as a handle to pry it open.</li>
-            <li>All users—including those who used the tab as a handle—tapped the tab to close the Nespresso.</li>
-            <li>All users correctly pressed the button to dispense coffee. Only some users waited for the lights to stop
-                flashing before pressing the button again; others repeatedly pressed the button.</li>
+            <li>Creating the interface from the perspective of a parent with complete access</li>
+            <li>Having two main pages: the user’s profile and family information</li>
+            <li>Enabling the user to see the purchase history of other family members
+            </li>
+            <li>Making money transfer seamless and easy</li>
+            <li>Using a pie chart to provide clear ways to save</li>
         </ul>
-        <p>Here are the interview questions that I asked each user along with a summary of their responses:
-        </p>
-        <ol>
-            <li class="interview-question">Just from looking at the Nespresso, do you think you would know how to use
-                it?
-            </li>
-            <p>All users felt that they would know how to use the Nespresso just from looking at it.
-            </p>
-            <li class="interview-question">Which components of the Nespresso do you think you can interact with and what
-                do you think each of their functions are?
-            </li>
-            <p>All users were able to correctly identify all of the interactable components on the Nespresso and their
-                primary functions. However, no user mentioned the possibility of the singular button on the machine
-                having other functions in addition to dispensing coffee.
-            </p>
-            <li class="interview-question">How did you feel in each step of the process of making coffee?
-            </li>
-            <p>Overall, users had a positive experience making coffee using the Nespresso. Users felt that each
-                component of the machine worked as expected and that they knew which components to interact with and
-                when. Some users were confused that the Nespresso didn’t immediately dispense coffee after pressing the
-                button.
-            </p>
-            <li class="interview-question">Is the Nespresso perfectly designed? If not, how would you redesign it?
-            </li>
-            <p>Only some users felt that the Nespresso was perfectly designed. A commonly suggested redesign was to add
-                a text display that lets the user know when the machine is preheating and ready to dispense coffee.
-                Another suggestion was to replace the tab with buttons that open and close the Nespresso.
-            </p>
-        </ol>
     </section>
     <section>
-        <h2>Part 3: Personas</h2>
-        <p>I created two personas based on the common trends I observed among the users I interviewed.
+        <h2>Part 2: Mockups</h2>
+        <p class="h3">Interactive High Fidelity Mockup</p>
+        <p>Based on the wireframe we created in Part 1, we made an interactive high-fidelity prototype using Figma.
+            Below is the embedded wireframe.
         </p>
-        <p class="persona">Persona 1: Gym-bro Jim</p>
-        <img class="sect-img" src="./assets/persona1.jpg">
-        <p>Gym-bro Jim is a college student who believes any obstacle can be overcome with hard work and grit. He’s used
-            to doing things manually, so he doesn’t realize that the Nespresso opens automatically. Like some of the
-            users I interviewed, instead of tapping the tab, gym-bro Jim uses the tab as a handle to pry the Nespresso
-            open.</p>
-        <p class="persona">Persona 2: Rushed Ruby</p>
-        <img class="sect-img" src="./assets/persona2.jpg">
-        <p>Rushed Ruby is a college student with a busy schedule who’s always rushing to get to her next meeting. In
-            between classes, she takes a detour back to her apartment for a cup of coffee to stay alert during the rest
-            of her day. She’s in a hurry, so she’s frustrated and confused that the Nespresso isn’t dispensing coffee
-            even after she pressed the button. Like the users I interviewed, Rushed Ruby repeatedly presses the button
-            while the Nespresso is preheating.</p>
+        <!--Copied from Figma-->
+        <iframe class="sect-img" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FdGIStrzdHEwZgKMPXTTO8o%2FIterative-Design%3Fpage-id%3D21%253A2%26node-id%3D234%253A335%26viewport%3D1132%252C462%252C0.24%26scaling%3Dcontain%26starting-point-node-id%3D234%253A335"
+            allowfullscreen>
+        </iframe>
+        <!---->
+        <p class="caption">Some of the design choices that led to this high fidelity prototype were:</p>
+        <p class="sketch">Interaction</p>
+        <ul>
+            <li>Interaction language for buttons: Verb or Verb + Noun (e.g. Customize, Report Fraud, Send or Request)
+            </li>
+            <li>Icons are consistent among pages. “Actions are hard to icon-ize” so we set our icons based on metaphors
+                and objects rather than actions (e.g. home = homepage, person = profile, plus = add). Geometry based
+                icons were used instead of hand-drawn ones</li>
+            <li>Memorability, efficiency, learnability: easy to recognize buttons and icons</li>
+        </ul>
+        <p class="sketch">Navigation</p>
+        <ul>
+            <li>Pages are grouped by topic to make webpage flow intuitive and reduce mental workload (personal spending,
+                personal balance, family balance, family spending, etc.)</li>
+            <li>Deliberate and consistent navigation styles for users to learn</li>
+            <li>The navigation flow is top-down. Users start from family spending/balance, then individual
+                spending/balance, then go down to each specific transaction</li>
+        </ul>
+        <p class="sketch">Hierarchy</p>
+        <ul>
+            <li>Interface is a hierarchy as seen by top-down navigation flow (users start from family spending/balance
+                then go down to individual spending/balance then to each specific transaction)</li>
+            <li>Navigation bar at the top and bottom indicates which level of hierarchy they are on (balance or
+                spending) and (family or self)</li>
+        </ul>
+        <p class="h3">Mockup Crit in Studio</p>
+        <p>We introduced our startup and prototype to our classmates, who then interacted with our prototype and
+            provided us with feedback. We updated our prototype to address the critiques we received.<br><br>Here is a
+            list of the critiques we received and an explanation for how we addressed them.</p>
+        <div class="row">
+            <div class="col-header">Critiques in Original Prototype</div>
+            <div class="col-header">Solutions in Redesign</div>
+        </div>
+        <div class="row">
+            <div class="col">The bottom navigation bar should be frozen.</div>
+            <div class="col">The bottom navigation bar is now frozen in place as the user scrolls.</div>
+        </div>
+        <div class="row">
+            <div class="col">Clicking on someone’s account in the family spending page redirects to that family
+                member’s account, which displays information about their balance.</div>
+            <div class="col">We included a top navigation bar the user can toggle between balance and spending
+                information for a family member. Clicking on someone’s account in the family balance page now redirects
+                to that individual’s balance tab, while clicking on the same account in the family spending page
+                redirects to that individual’s spending tab.</div>
+        </div>
+        <div class="row">
+            <div class="col">There should be more security when transferring money.</div>
+            <div class="col">We now require the user to enter a pin before they transfer money.</div>
+        </div>
+        <div class="row">
+            <div class="col">It would be difficult to differentiate the user from a family member named “Me.”</div>
+            <div class="col">We now include a crown next to the user’s name and highlight their profile picture with a
+                purple ring.</div>
+        </div>
+        <div class="row">
+            <div class="col">The graph charting the user’s balance could cause anxiety because it will have a negative
+                slope until the user’s next paycheck.</div>
+            <div class="col">We removed the graph from our prototype.</div>
+        </div>
+        <div class="row">
+            <div class="col">Having the pie chart be different shades of purple is poor accessibility.</div>
+            <div class="col">Our pie chart now uses color-blind friendly colors.</div>
+        </div>
+        <div class="row-bot">
+            <div class="col">Placing the “Customize” button at the bottom of the page could frustrate a new user.</div>
+            <div class="col">We now place the “Customize” button at the top of the “Accounts” section.</div>
+        </div>
     </section>
     <section>
-        <h2>Part 4: Storyboards</h2>
-        <p>I created a storyboard for Rushed Ruby.</p>
-        <img class="sect-img" src="./assets/comic-part1.jpg">
-        <img class="sect-img" src="./assets/comic-part2.jpg">
+        <h2>Part 3: User Testing</h2>
+        <p>Using our interactive hi-fi prototype, we conducted usability testing through UserTesting.com, a user testing
+            service.</p>
+        <p class="h3">Determine a Task</p>
+        <p>We gave users the following tasks which capture the primary functions of the app (sending money, viewing
+            transactions, analyzing transaction categories):</p>
+        <p>Overarching Task: Send $121.41 to your son, Jaden</p>
+        <ul>
+            <li>Step 1: Start on home by clicking the home icon in the bottom navigation bar</li>
+            <li>Step 2: Click on Jaden’s profile</li>
+            <li>Step 3: Click on the Request/Send button</li>
+            <li>Step 4: Send Amount</li>
+            <li>Step 5: Enter Pin</li>
+        </ul>
+        <p>Sub Task 1: View the transaction labeled “Chipotle” under Jaden</p>
+        <ul>
+            <li>Step 1: Start on home by clicking the home icon in the bottom navigation bar</li>
+            <li>Step 2: Click on Jaden’s profile</li>
+            <li>Step 3: Click on spending in the top navigation bar</li>
+            <li>Step 4: Scroll down and click on the Chipotle transaction arrow under “Recent Purchases”</li>
+        </ul>
+        <p>Sub Task 2: Find out what the top category in monthly family spending is</p>
+        <ul>
+            <li>Step 1: Start on home by clicking the home icon in the bottom navigation bar</li>
+            <li>Step 2: Click on “Spending” in the top navigation bar</li>
+            <li>Step 3: Look at the pie chart labeled under “Monthly Family Spending”</li>
+        </ul>
+        <p class="h3">Testing Instructions & UserTesting.com</p>
+        <p>On UserTesting.com, we provided testing instructions and post-test questions to collect information from
+            three users.</p>
+        <p class="sketch">Testing Instructions</p>
+        <p>Finnt is a mobile banking app for families. By allowing family members to create sub-accounts under a main
+            account, Finnt makes financial management easy. Finnt is designed for families who want to track the
+            spending of their kids, send money to relatives overseas, and save together. Users should be in a relaxed
+            state of mind when performing the experiment. In this experiment, you are Will Smith (head of your Finnt
+            family). The objective of this experiment is to send money ($121.41) to your son (Jaden), to see Jaden's
+            transaction labeled as Chipotle, and to find out what the top category in family monthly spending is. This
+            is not an actual website but an interactive mockup made on Figma, a prototyping software.</p>
+        <p class="sketch">Post-test Questions</p>
+        <ul>
+            <li>What frustrated you most about this site?</li>
+            <li>Do you think this app could help families save money?</li>
+            <li>Did navigating the app feel intuitive?</li>
+        </ul>
+        <p class="sketch">Links to all Three User Testing Videos</p>
+        <ul>
+            <li><a
+                    href="https://app.usertesting.com/v/307385eb-8122-4ea5-abf2-f2a492160530?encrypted_video_handle=305706ac-28f8-44f1-a7b0-8db788c4c8f6&shared_via=link#!/notes">User
+                    1</a>
+            </li>
+            <li><a
+                    href="https://app.usertesting.com/v/50890305-d0e5-4fcb-8612-6187fb470fc9?encrypted_video_handle=6826234d-951b-41f1-970a-820e77f6ec6d&shared_via=link#!/notes">User
+                    2</a>
+            </li>
+            <li><a
+                    href="https://app.usertesting.com/v/91b70a8d-272b-4bfc-8b36-f7d867f7a180?encrypted_video_handle=a8b91444-2be8-4eae-a500-286f8664352c&shared_via=link#!/notes">User
+                    3</a>
+            </li>
+        </ul>
+        <p class="h3">Analysis of Results</p>
+        <p>Generally, all 3 tasks were completed with ease and their behavior was in line with expectations. All tasks
+            were marked as “very easy” when users were asked to assess difficulty. Although there were some challenges
+            users faced, all the users were able to overcome them in a relatively short amount of time.</p>
+        <p>Most of the users struggled with Task 2, which was finding Jaden’s Chipotle transaction. Users tried to find
+            this transaction by either</p>
+        <ul>
+            <li>clicking “View All Transactions” under the “Balance” tab instead of “Recent Purchases” under the
+                “Spending” tab</li>
+            <li>clicking on the food category in the pie chart or the list of categories beneath it.</li>
+        </ul>
+        <p>In the feedback, the users all found the app to be intuitive to navigate and use, appreciated the color
+            scheme of the website, and how fleshed out our prototype was. A user also said that they really liked the
+            PIN because it adds another layer of financial security. One user even said, “This app is very simple, easy
+            and straightforward. I love the amount of detail.” With more time, we would rename the “View All
+            Transactions” button to “Funds History” to clearly distinguish balance transactions from purchases.
+            Additionally, we would make entire rows clickable instead of just the arrow icons. Finally, we would create
+            a transactions page for each category.</p>
+    </section>
+    <section>
+        <h2>Part 4: Contact the Startup</h2>
+        <p>Finally, we emailed Finnt and shared the final version of our mockup with them. Below is their response.</p>
+        <img class="sect-img" src="./assets/email.png">
+    </section>
+    <section>
+        <h2>Key Takeaways</h2>
+        <p>From this project, we learned how to work together to design an interactive interface for an emerging
+            startup. We learned the full process of mocking up a solution to a startup's concept in Figma and
+            going through the steps of sketching, prototyping, and user testing.
+        </p>
     </section>
     <section>
         <h2>Citations</h2>
         <ul>
-            <li>The layout of this website was inspired by the handout for this assignment.</li>
-            <li>I used <a href="https://stock.adobe.com/search?k=muscle+man+cartoon&asset_id=183490927">persona1</a> and
-                <a
-                    href="https://www.istockphoto.com/vector/cartoon-girl-holding-books-and-smiling-female-college-student-in-glasses-gm1211824999-351588232">persona2</a>
-                as
-                reference photos for my personas drawings.
-            </li>
-            <li>I used the following images as reference photos for my storyboard: <a
-                    href="https://myloview.com/sticker-man-worker-or-businessman-asleep-or-sleeping-standing-vector-no-EF1D92B">frame1</a>,
-                <a href="https://www.pinterest.com/pin/845410161292345032/">frame2</a>,
-                <a
-                    href="https://www.shutterstock.com/image-vector/vector-hand-drawn-sketch-cartoon-illustration-1476139997">frame4</a>,
-                <a
-                    href="https://www.vectorstock.com/royalty-free-vector/cartoon-man-or-businessman-thinking-about-vector-24855151">frame5</a>,
-                <a
-                    href="https://www.freepik.com/premium-vector/cartoon-surprised-face-funny-vector-character-astonished-emoji-dumbfounded-facial-expression-with-wide-open-mouth-goggle-eyes-wow-feelings-isolated-white-background_25509757.htm">frame6</a>,
-                <a
-                    href="https://www.vectorstock.com/royalty-free-vector/cartoon-of-angry-man-or-businessman-vector-23967530">frame8</a>,
-                <a
-                    href="https://www.alamy.com/vector-cartoon-stick-figure-drawing-conceptual-illustration-of-surprised-man-or-businessman-walking-around-dustbin-garbage-can-full-of-euro-currency-symbol-thrown-as-waste-image354750982.html">frame9</a>
-            </li>
+            <li>This was a group project.</li>
         </ul>
     </section>
 </main>
