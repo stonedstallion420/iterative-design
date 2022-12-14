@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intiial-scale=1">
+    <!--Copied from bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!---->
+
+    <title>Personas</title>
+</head>
+
+<!--Copied from bootstrap-->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="https://stonedstallion420.github.io/portfolio/">
+        <img class="logo" src="./assets/logo.png">
+        StonedStallion420</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="https://stonedstallion420.github.io/portfolio/">Home <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Personas</a>
+                    <a class="dropdown-item" href="#">Responsive Redesign</a>
+                    <a class="dropdown-item" href="#">Iterative Design</a>
+                    <a class="dropdown-item" href="#">Development</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!---->
+
+<main>
+    <h1>Personas & Storyboarding</h1>
+    <section>
+        <h2>Overview</h2>
+        <p>I observed people interacting with a Nespresso coffee machine, interviewed them about their experiences,
+            created
+            two personas based on my observations and their responses, then illustrated a storyboard for one of my
+            personas.
+        </p>
+    </section>
+    <section>
+        <h2>Part 1: Preparation</h2>
+        <p>I first performed a contextual inquiry: I observed a Nespresso coffee machine sitting in the lounge of an
+            apartment, created interview questions, then asked these questions to people while they were interacting
+            with the Nespresso. To better understand the Nespresso, I drew a sketch of it and labeled its interactive
+            components.</p>
+        <img class="sect-img" src="./assets/sketch.jpg">
+        <p>Nespresso makes making coffee easy. Other coffee machines require users to purchase coffee beans and filter
+            paper, measure out how many beans they want to use, grind them, then wait several minutes for their coffee
+            to brew. With Nespresso, a user simply taps under the tab to open the machine, inserts a capsule that
+            contains ground beans, taps on top of the tab to close the machine, and presses a button for their coffee.
+            Note that the user will have to press the button twice. The first press will preheat the Nespresso, which is
+            indicated by a flashing green light. Once the light stops flashing, the user can press the button a second
+            time and the Nespresso will dispense coffee.</p>
+    </section>
+    <section>
+        <h2>Part 2: Recording Observations</h2>
+        <p>I observed 3 people using the Nespresso. Here are key observations I learned:</p>
+        <ul>
+            <li>All users first interacted with the tab to open the Nespresso. Only some of the users correctly tapped
+                the tab; others used the tab as a handle to pry it open.</li>
+            <li>All users—including those who used the tab as a handle—tapped the tab to close the Nespresso.</li>
+            <li>All users correctly pressed the button to dispense coffee. Only some users waited for the lights to stop
+                flashing before pressing the button again; others repeatedly pressed the button.</li>
+        </ul>
+        <p>Here are the interview questions that I asked each user along with a summary of their responses:
+        </p>
+        <ol>
+            <li class="interview-question">Just from looking at the Nespresso, do you think you would know how to use
+                it?
+            </li>
+            <p>All users felt that they would know how to use the Nespresso just from looking at it.
+            </p>
+            <li class="interview-question">Which components of the Nespresso do you think you can interact with and what
+                do you think each of their functions are?
+            </li>
+            <p>All users were able to correctly identify all of the interactable components on the Nespresso and their
+                primary functions. However, no user mentioned the possibility of the singular button on the machine
+                having other functions in addition to dispensing coffee.
+            </p>
+            <li class="interview-question">How did you feel in each step of the process of making coffee?
+            </li>
+            <p>Overall, users had a positive experience making coffee using the Nespresso. Users felt that each
+                component of the machine worked as expected and that they knew which components to interact with and
+                when. Some users were confused that the Nespresso didn’t immediately dispense coffee after pressing the
+                button.
+            </p>
+            <li class="interview-question">Is the Nespresso perfectly designed? If not, how would you redesign it?
+            </li>
+            <p>Only some users felt that the Nespresso was perfectly designed. A commonly suggested redesign was to add
+                a text display that lets the user know when the machine is preheating and ready to dispense coffee.
+                Another suggestion was to replace the tab with buttons that open and close the Nespresso.
+            </p>
+        </ol>
+    </section>
+    <section>
+        <h2>Part 3: Personas</h2>
+        <p>I created two personas based on the common trends I observed among the users I interviewed.
+        </p>
+        <p class="persona">Persona 1: Gym-bro Jim</p>
+        <img class="sect-img" src="./assets/persona1.jpg">
+        <p>Gym-bro Jim is a college student who believes any obstacle can be overcome with hard work and grit. He’s used
+            to doing things manually, so he doesn’t realize that the Nespresso opens automatically. Like some of the
+            users I interviewed, instead of tapping the tab, gym-bro Jim uses the tab as a handle to pry the Nespresso
+            open.</p>
+        <p class="persona">Persona 2: Rushed Ruby</p>
+        <img class="sect-img" src="./assets/persona2.jpg">
+        <p>Rushed Ruby is a college student with a busy schedule who’s always rushing to get to her next meeting. In
+            between classes, she takes a detour back to her apartment for a cup of coffee to stay alert during the rest
+            of her day. She’s in a hurry, so she’s frustrated and confused that the Nespresso isn’t dispensing coffee
+            even after she pressed the button. Like the users I interviewed, Rushed Ruby repeatedly presses the button
+            while the Nespresso is preheating.</p>
+    </section>
+    <section>
+        <h2>Part 4: Storyboards</h2>
+        <p>I created a storyboard for Rushed Ruby.</p>
+        <img class="sect-img" src="./assets/comic-part1.jpg">
+        <img class="sect-img" src="./assets/comic-part2.jpg">
+    </section>
+    <section>
+        <h2>Citations</h2>
+        <ul>
+            <li>The layout of this website was inspired by the handout for this assignment.</li>
+            <li>I used <a href="https://stock.adobe.com/search?k=muscle+man+cartoon&asset_id=183490927">persona1</a> and
+                <a
+                    href="https://www.istockphoto.com/vector/cartoon-girl-holding-books-and-smiling-female-college-student-in-glasses-gm1211824999-351588232">persona2</a>
+                as
+                reference photos for my personas drawings.
+            </li>
+            <li>I used the following images as reference photos for my storyboard: <a
+                    href="https://myloview.com/sticker-man-worker-or-businessman-asleep-or-sleeping-standing-vector-no-EF1D92B">frame1</a>,
+                <a href="https://www.pinterest.com/pin/845410161292345032/">frame2</a>,
+                <a
+                    href="https://www.shutterstock.com/image-vector/vector-hand-drawn-sketch-cartoon-illustration-1476139997">frame4</a>,
+                <a
+                    href="https://www.vectorstock.com/royalty-free-vector/cartoon-man-or-businessman-thinking-about-vector-24855151">frame5</a>,
+                <a
+                    href="https://www.freepik.com/premium-vector/cartoon-surprised-face-funny-vector-character-astonished-emoji-dumbfounded-facial-expression-with-wide-open-mouth-goggle-eyes-wow-feelings-isolated-white-background_25509757.htm">frame6</a>,
+                <a
+                    href="https://www.vectorstock.com/royalty-free-vector/cartoon-of-angry-man-or-businessman-vector-23967530">frame8</a>,
+                <a
+                    href="https://www.alamy.com/vector-cartoon-stick-figure-drawing-conceptual-illustration-of-surprised-man-or-businessman-walking-around-dustbin-garbage-can-full-of-euro-currency-symbol-thrown-as-waste-image354750982.html">frame9</a>
+            </li>
+        </ul>
+    </section>
+</main>
+
+</html>
